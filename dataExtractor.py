@@ -12,7 +12,6 @@ class dataExtractor:
             for i in column_name:
                 search_index=file_reader.index(i,search_index)
                 column_index.append(search_index)
-                
             rows=file.readlines()
         data=[]
         for row in rows:
@@ -32,4 +31,3 @@ class dataExtractor:
         except:
             pass
         return data
-            
